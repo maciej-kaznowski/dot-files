@@ -1,6 +1,18 @@
-# Using this repo
+# dot-files
 
-## Pulling locally
+## Summary
+
+Configured in this repo are various dot files for my personal machine:
+- [Kitty](https://github.com/kovidgoyal/kitty) as the terminal
+- [Sway](https://github.com/swaywm/sway) as the compositor
+- [Waybar](https://github.com/Alexays/Waybar) as the system bar
+- [Wofi](https://hg.sr.ht/~scoopta/wofi) as the application launcher
+- [zsh](https://www.zsh.org/) and [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) as the shell
+
+
+## Using this repo
+
+### Pulling locally
 
 ```bash
 git clone --separate-git-dir=$HOME/.myconf /path/to/repo $HOME/myconf-tmp
@@ -9,7 +21,7 @@ rm -r ~/myconf-tmp/
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 ```
 
-## Creating a non-intrusive dot-files repo
+### Creating a non-intrusive dot-files repo
 
 Inspired by [StreakyCobra](https://news.ycombinator.com/item?id=11070797#11071754):
 
