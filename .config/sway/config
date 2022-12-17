@@ -72,7 +72,7 @@ input type:keyboard {
 }
 
 input "1452:591:Keychron_Keychron_K5" {
-    xkb_layout us(alt-intl)
+    xkb_layout us(altgr-intl)
 }
 
 input "1:1:AT_Translated_Set_2_keyboard" {
