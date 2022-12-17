@@ -295,5 +295,6 @@ exec swayidle -w \
 bindsym $mod+l exec swaylock -f -c 000000
 bindsym XF86PowerOff exec systemctl suspend
 
+exec ssh-agent -s
 
 include /etc/sway/config.d/*
