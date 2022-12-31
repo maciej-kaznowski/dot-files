@@ -283,16 +283,18 @@ bindsym Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focus
 bindsym Shift+Print exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png')
 
 # Lock screen after 30 minutes of inactivity
-# Turn screen off after 20 minutes of inactivity
+# Turn screen off after 31 minutes of inactivity
 # Turn display on after resuming
 # Lock screen after going to sleep
 exec swayidle -w \
-	timeout 1800 'swaylock -f -c 000000' \
-	timeout 1200 'swaymsg "output * dpms off"' \
+	timeout 1800 'swaylock -f --grace 10' \
+	timeout 1860 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"' \
-	before-sleep 'swaylock -f -c 000000'
+	before-sleep 'swaylock -f'
 
-bindsym $mod+l exec swaylock -f -c 000000
+bindsym $mod+l exec swaylock -f -n \
+
+
 bindsym XF86PowerOff exec systemctl suspend
 
 exec ssh-agent -s
