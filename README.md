@@ -6,9 +6,15 @@ Configured in this repo are various dot files for my personal machine:
 - [Kitty](https://github.com/kovidgoyal/kitty) as the terminal
 - [Sway](https://github.com/swaywm/sway) as the compositor
 - [Waybar](https://github.com/Alexays/Waybar) as the system bar
+- [Swaylock-effects](https://github.com/mortie/swaylock-effects) as the lockscreen
 - [Wofi](https://hg.sr.ht/~scoopta/wofi) as the application launcher
 - [zsh](https://www.zsh.org/) and [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) as the shell
 
+
+## Previews
+![Desktop](docs/readme_desktop.png?raw=true "Desktop")
+![Wofi](docs/readme_wofi.png?raw=true "Wofi")
+![Windows](docs/readme_windows.png?raw=true "Windows")
 
 ## Using this repo
 
